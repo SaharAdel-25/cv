@@ -1,0 +1,716 @@
+
+body {
+    /* font-family: Open-Sans,'Arial', sans-serif; */
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+section {
+    scroll-margin-top: 80px; 
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #2c3e50; 
+    padding: 15px 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+nav li a i {
+    margin-right: 10px;  
+}
+h2 i, h3 i {
+    margin-right: 8px;
+}
+
+nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #3498db;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 18px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 28px;
+}
+/*first main*/
+.intro {
+    padding: 30px 0;
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    justify-content: space-between;
+    background: linear-gradient(#3498db, #638fb8, rgba(70, 112, 152, 0.8)); 
+/*background: linear-gradient(135deg,#3498db, rgba(25, 140, 165, 0.7), rgba(55, 89, 120, 0.8)); */
+}
+.intro-content {
+    flex: 1; 
+    text-align: center; 
+}
+.intro-content h2{
+    margin-bottom: 0;
+    margin-top: 25px;
+
+
+
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    margin-top: 135px;
+    margin-bottom: 10px;
+    border-radius: 50%; 
+    border: 3px solid rgb(69, 71, 85);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-right: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+.profile-img:hover{
+    width: 200px;
+    height: 200px;
+
+} 
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.intro:hover{
+    transform: scale(1.02) translateY(10px); 
+
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+
+.aboutMe-part, .Education-part, .Projects-part, .certificates-part {
+    background-color: #6279886e;
+    padding: 30px 20px;
+    margin: 20px 10px;
+    border: 2px dotted ;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+.aboutMe-part p ,.Education-part p {
+    margin-left: 20px;
+}
+
+.education-list  {
+    list-style: none;
+
+}
+.education-list li i {
+margin-right: 5px;
+}
+
+
+.aboutMe-part:hover, .Education-part:hover{
+    background: linear-gradient( #638fb8, #8c8f90, #365069);
+color: rgb(212, 222, 235);
+    /*background: linear-gradient(#1a69ad,rgb(60, 118, 149),white);*/
+}
+    
+
+
+/* .btn-primary {
+
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+} */
+
+/* 
+.project .btn, .certificate a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    background-color: #2774a7;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.project .btn:hover,.certificate a:hover {
+    background: #173040;
+    transform: scale(1.05);
+} */
+
+/* .certificate a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 8px;
+    background-color: #2774a7;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.project .btn:hover,.certificate a:hover {
+    background: #173040;
+    transform: scale(1.05);
+} */
+
+.certificate-grid , .projects-container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-items: center;
+}
+
+.certificate a {
+    display: block; 
+    width: 75%;
+}
+
+.project, .certificate {
+    background-color: #ecf1ee;
+    padding: 20px;
+    max-width:20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: linear-gradient(to right , #638fb8, #8c8f90, #365069); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.project:hover, .certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.project img, .certificate img {
+    width: 100%; /* اجعل الصورة تملأ العنصر بالكامل دون تشويه */
+    max-width: 300px; /* تحديد الحد الأقصى لعرض الصورة حتى لا تكبر أكثر من اللازم */
+    height: 340px; /* الحفاظ على النسبة الأصلية للصورة */
+    object-fit: contain;
+    margin-bottom: 15px;
+    /* object-fit: cover; سيملأ الصورة العنصر بدون تشويه */
+    border-radius: 10px; /* إضافة لمسة جمالية بحواف مستديرة */
+}
+
+
+/* Contact Section */ 
+.Contact-part {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+/* استحدام المكتبة للفورم */
+.form-control {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 50%;
+    max-width: 500px;
+    font-size: 15px;
+}
+
+/* 
+.input-group {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+} */
+/*  Using Bootstrap*/
+/* .btn-danger {
+    background-color: #ff6f61 !important;
+}
+.btn-danger:hover {
+    background-color: #0a0908; } /* تغيير اللون عند التمرير */
+
+
+/* .btn-submit {
+    background-color: #ff6f61; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #ff3f2f; 
+} */
+
+.social-icon {
+    display: inline-block; 
+    color: #ecf0f1;
+    margin: 15px 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social-icon:hover {
+    color: #ff6f61; 
+    background-color: #181214; 
+    padding: 10px; 
+    }
+
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .intro-content {
+        margin-top:80px;
+    }
+
+    .intro {
+        height: 140px;
+        font-size: 30px;
+        padding-top:20px ;
+        margin-top: 0;
+        
+    }
+    .intro img {
+        height:200px;
+        width: 220px;
+    }
+
+    .aboutMe-part,.Education-part{
+        font-size: 25px;
+        border-radius: 25px;
+    }
+    .certificates-part h2,.Projects-part h2{
+        font-size: 35px;
+
+    }
+
+    .certificate-grid, .projects-container {
+        font-size: 22px; 
+    }
+
+    .certificate-grid, .projects-container {
+    font-size: 25px;
+    
+    }
+
+    .project, .certificate {
+        width: 60%;
+        padding: 10px;
+        max-width: 40%; /* توسيط الصورة وجعلها تملأ العنصر */
+
+    }
+
+    .project img, .certificate img {
+        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        height: 220px;
+    }
+
+    .btn-primary{
+        width: 55%;
+        height: auto;
+        padding:12px;
+        border-radius: 18px;
+        margin: 5px;
+    }
+    
+    .btn-danger{
+        width: 23%;
+        height: auto;
+        padding:12px;
+        border-radius: 18px;
+        margin: 5px;
+    }
+
+    .social-icon{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    header{
+        margin-left: 15px;
+    }
+    .navbar {
+        flex-direction: row; /* إبقاء العناصر في صف واحد */
+        justify-content: space-between; /* توزيع العناصر بين اليسار واليمين */
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 28px; /* تقليل حجم الخط */
+        margin-left: 0; /* إلغاء المسافة الجانبية */
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+    nav ul {
+        display: flex; /* إبقاء الروابط في صف واحد */
+        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        text-align: center;
+}
+
+    nav li {
+        margin: 0 2px; /* تقليل المسافة بين العناصر */
+    }
+
+    nav li a {
+        font-size: 22px; /* تقليل حجم الخط */
+        padding: 10px 10px; /* تعديل الحشو حول النص */
+    }
+
+    nav li a:hover {
+        background-color: #333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .intro {
+        height: 120px;
+        font-size: 30px;
+
+    }
+
+    .intro img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .intro-content {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .aboutMe-part,.Education-part{
+        font-size: 25px;
+        border-radius: 25px;
+    }
+    .certificates-part h2,.Projects-part h2{
+        font-size: 35px;
+
+    }
+
+    .certificate-grid, .projects-container {
+        font-size: 22px; 
+    }
+
+    .project, .certificate {
+        max-width: 30%; /* جعل كل عنصر يشغل كامل العرض */
+        width: 55%;
+        padding: 15px;
+    }
+
+    .project img, .certificate img {
+        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar  {
+        /* display: inline-block; */
+        display: flex;
+        margin-right: 5px;
+    
+    }
+    .navbar h1 {
+        font-size: 28px; /* تقليل حجم الخط */
+        margin-left: 0; /* إلغاء المسافة الجانبية */
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+    nav ul {
+        display: flex; /* إبقاء الروابط في صف واحد */
+        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        text-align: center;
+}
+
+    nav li {
+        margin: 0 2px; /* تقليل المسافة بين العناصر */
+    }
+
+    nav li a {
+        font-size: 22px; /* تقليل حجم الخط */
+        padding: 10px 10px; /* تعديل الحشو حول النص */
+    }
+
+    nav li a:hover {
+        background-color: #333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .intro {
+        height: 150px;
+        font-size: 30px;
+
+    }
+
+    .intro img {
+        height: 160px;
+        width: 180px;
+    }
+
+    .intro-content {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .aboutMe-part,.Education-part{
+        font-size: 25px;
+        border-radius: 25px;
+    }
+    .certificates-part h2,.Projects-part h2{
+        font-size: 35px;
+
+    }
+
+    .certificate-grid, .projects-container {
+        font-size: 22px; 
+    }
+
+    .project, .certificate {
+        max-width: 30%; /* جعل كل عنصر يشغل كامل العرض */
+        width: 55%;
+        padding: 15px;
+    }
+
+    .project img, .certificate img {
+        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: row; /* إبقاء العناصر في صف واحد */
+        justify-content: space-between; /* توزيع العناصر بين اليسار واليمين */
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 22px; /* تقليل حجم الخط */
+        margin-left: 0; /* إلغاء المسافة الجانبية */
+        margin-bottom:20px;
+        text-align:center;
+        flex: 1; /* تأكد من أن العنوان يأخذ المساحة المتاحة */
+        display: flex; /* إضافة flexbox */
+        justify-content: center; /* محاذاة النص في المنتصف */
+    }
+
+    nav ul {
+        display: flex; /* إبقاء الروابط في صف واحد */
+        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        text-align: center;
+}
+
+    nav li {
+        margin: 0 2px; /* تقليل المسافة بين العناصر */
+    }
+
+    nav li a {
+        font-size: 14px; /* تقليل حجم الخط */
+        padding: 10px 15px; /* تعديل الحشو حول النص */
+    }
+
+    nav li a:hover {
+        background-color: #333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .intro {
+        height: 170px;
+    }
+
+    .intro img {
+        height: 170px;
+        width: 180px;
+    }
+
+    .intro-content {
+        margin-top: 80px;
+        font-size: 10px;
+    }
+
+    .certificate-grid, .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* جعل العناصر تتكدس عموديًا */
+        gap: 10px; /* تقليل المسافة بين العناصر */
+        justify-items: center;
+        align-items: center; /* توسيط العناصر */
+    }
+
+    .project, .certificate {
+        max-width: 100%; /* جعل كل عنصر يشغل كامل العرض */
+        width: 80%;
+        padding: 10px;
+    }
+
+    .project img, .certificate img {
+        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        height: 220px;
+    }
+
+.social-icon {
+    display: inline-block; 
+    font-size: 19px;
+}
+
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        flex-direction: column; /* تحويل القائمة إلى عمودية */
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 18px; /* تصغير حجم العنوان */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 5px 0; /* توزيع الروابط */
+    }
+
+    nav li a {
+        font-size: 14px; /* تصغير النص */
+        padding: 8px 10px;
+    }
+
+    .intro {
+        height: auto;
+        font-size: 18px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro-content {
+        margin-top: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .certificate-grid, .projects-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project, .certificate {
+        width: 90%;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .project img, .certificate img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn-primary, .btn-danger {
+        width: 90%;
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+}

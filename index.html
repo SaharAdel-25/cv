@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!--CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>My Resume</h1>
+            <nav>
+                <ul>
+                    <li><a href="#aboutMe"><i class="bi bi-person"></i> About</a></li>
+                    <li><a href="#Education"><i class="bi bi-book"></i> Education</a></li>
+                    <li><a href="#Projects"><i class="bi bi-laptop"></i> Projects</a></li>
+                    <li><a href="#Certificates"><i class="bi bi-trophy"></i> Certificates</a></li>
+                    <li><a href="#Contact"><i class="bi bi-envelope"></i>Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <h2>Sahar Adel Mohammed</h2>
+                <p>Software Engineering Student</p>
+            </div>
+            <img src="pur.jpg" alt="Profile Picture" class="profile-img">
+        </section>
+        
+
+        <section class="aboutMe-part" id="aboutMe">
+            <h2><i class="bi bi-person-hearts"></i> About Me</h2>
+            <p>
+                I am a student at the University of Jeddah, studying at the College of Computer Science and Engineering in the Software Engineering department.
+                I have a great passion for acquiring knowledge and developing my skills in the field of computer science. I always strive to learn new things and continuously improve myself.
+            </p>
+        </section>
+        
+        <section class="Education-part" id="Education">
+            <h2><i class="bi bi-book"></i></i>Education</h2>
+            <p class="university-name">University of Jeddah</p>
+            <ul class="education-list">
+                <li><i class="bi bi-building"></i> College of Computer Science and Engineering</li>
+                <li><i class="bi bi-laptop"></i> Bachelor of Software Engineering</li>
+                <li><i class="bi bi-person-lines-fill"></i> Fourth year specialization</li>
+                <li><i class="bi bi-bar-chart-line"></i> Cumulative GPA: <strong>4.96/5.0</strong></li>
+                <li><i class="bi bi-hourglass-split"></i>  Expected Graduation: <strong>2026</strong></li>
+            </ul>
+        </section>
+
+        <section id="Projects" class="Projects-part">
+            <h2><i class="bi bi-laptop"></i>Projects</h2>
+            <div class="projects-container">
+    
+                <div class="project">
+                    <img src="ProjectImg/project_uj_locer.png" alt="UJ_Lockers_Reservation">
+                    <h3>UJ Lockers Reservation</h3>
+                    <p>A system for reserving lockers at the University of Jeddah.</p>
+                    <a href="https://github.com/SaharAdel-25/UJ_LockersReservation" target="_blank" class="btn btn-primary">Project Link</a>
+                </div>
+    
+                <div class="project">
+                    <img src="ProjectImg/project_terhal.png" alt="project_Terhal_Agent ">
+                    <h3>Terhal - Travel Agent App</h3>
+                    <p>An application for managing travel bookings and itineraries.</p>
+                    <a href="https://github.com/TravelAgentApp/Terhal" target="_blank" class="btn btn-primary ">Project Link</a>
+                </div>
+
+                <!-- New project: Manage the Employee -->
+                <div class="project">
+                    <img src="ProjectImg/employee.png" alt="Manage_The_Employee">
+                    <h3>Manage The Employee</h3>
+                    <p>A system for managing employee records and operations.</p>
+                    <a href="https://github.com/SaharAdel-25/ManageTheEmployee.git" target="_blank" class="btn btn-primary">Project Link</a>
+                </div>
+
+                <!-- New project: Manage the Hospital -->
+                <div class="project">
+                    <img src="ProjectImg/hospital.png" alt="Manage_The_Hospital">
+                    <h3>Manage The Hospital</h3>
+                    <p>A system for managing hospital staff, patients, and appointments.</p>
+                    <a href="https://github.com/SaharAdel-25/ManageTheHospital.git" target="_blank" class="btn btn-primary">Project Link</a>
+                </div>
+
+            </div>
+        </section>
+        
+
+        <section id="Certificates" class="certificates-part">
+            <h2><i class="bi bi-trophy"></i> Certificates</h2>
+            <div class="certificate-grid">
+                
+                <div class="certificate">
+                    <img src="" alt="certificate 1">
+                    <h4>Data Analysis</h4>
+                    <a href="certificate-link.html" target="_blank" class="btn btn-primary">View Certificate</a>
+                </div>
+                <!-- <div class="certificate">
+                    <img src="" alt="Project 2">
+                    <h4>CSS3 Certificate</h4>
+                    <a href="certificate-link.html" target="_blank" class="btn btn-primary">View Certificate</a>
+                </div> -->
+                <div class="certificate">
+                    <img src="CertificatesImg/Resource_Chains.png" alt="Resource_Chains">
+
+                    <h4>Resource Chains Certificate</h4>
+                    <a href="CertificatesImg/Resource_Chains.png" target="_blank" class="btn btn-primary">View Certificate</a>
+                </div>
+                <div class="certificate">
+                    <img src="CertificatesImg/UI_UX.png" alt="UI_UX">
+                    <h4>UI/UX Certificate</h4>
+                    <a href="CertificatesImg/UI_UX.png" target="_blank" class="btn btn-primary">View Certificate</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="Contact-part">
+            <h2><i class="bi bi-envelope"></i>Contact Me</h2>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" required placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+
+                <!-- <button type="submit" class="btn-submit">Submit</button> -->
+            </form>
+
+            <div class="social-icons">
+                <a href="https://x.com/sahar_sw_?t=26r4PZO6m5Omma7ZNdiUaA&s=09" target="_blank" class="social-icon twitter"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/sahar-adel-20aa7825b/" target="_blank" class="social-icon linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/SaharAdel-25" target="_blank" class="social-icon github"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sahar Adel Mohammed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
