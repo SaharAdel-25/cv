@@ -1,6 +1,5 @@
 
 body {
-    /* font-family: Open-Sans,'Arial', sans-serif; */
     font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -9,6 +8,7 @@ body {
     color: #333;
 }
 
+ /* header Section */ 
 
 header {
     background-color: #2c3e50;
@@ -73,7 +73,7 @@ h1 {
     margin-left: 8px;
     font-size: 28px;
 }
-/*first main*/
+ /* intro and Education Section */ 
 .intro {
     padding: 30px 0;
     align-items: center;
@@ -85,7 +85,6 @@ h1 {
     text-align: left;
     justify-content: space-between;
     background: linear-gradient(#3498db, #638fb8, rgba(70, 112, 152, 0.8)); 
-/*background: linear-gradient(135deg,#3498db, rgba(25, 140, 165, 0.7), rgba(55, 89, 120, 0.8)); */
 }
 .intro-content {
     flex: 1; 
@@ -94,9 +93,6 @@ h1 {
 .intro-content h2{
     margin-bottom: 0;
     margin-top: 25px;
-
-
-
 }
 
 .profile-img {
@@ -161,52 +157,9 @@ margin-right: 5px;
 .aboutMe-part:hover, .Education-part:hover{
     background: linear-gradient( #638fb8, #8c8f90, #365069);
 color: rgb(212, 222, 235);
-    /*background: linear-gradient(#1a69ad,rgb(60, 118, 149),white);*/
 }
     
-
-
-/* .btn-primary {
-
-}
-.btn-primary:hover {
-    transform: scale(1.05);
-} */
-
-/* 
-.project .btn, .certificate a {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-left: 8px;
-    background-color: #2774a7;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-
-.project .btn:hover,.certificate a:hover {
-    background: #173040;
-    transform: scale(1.05);
-} */
-
-/* .certificate a {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-left: 8px;
-    background-color: #2774a7;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-
-.project .btn:hover,.certificate a:hover {
-    background: #173040;
-    transform: scale(1.05);
-} */
+ /* projects and certificate Section */ 
 
 .certificate-grid , .projects-container{
     display: flex;
@@ -236,8 +189,6 @@ color: rgb(212, 222, 235);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .project:hover, .certificate:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
@@ -245,15 +196,13 @@ color: rgb(212, 222, 235);
 }
 
 .project img, .certificate img {
-    width: 100%; /* اجعل الصورة تملأ العنصر بالكامل دون تشويه */
-    max-width: 300px; /* تحديد الحد الأقصى لعرض الصورة حتى لا تكبر أكثر من اللازم */
-    height: 340px; /* الحفاظ على النسبة الأصلية للصورة */
+    width: 100%; 
+    max-width: 300px; 
+    height: 340px; 
     object-fit: contain;
     margin-bottom: 15px;
-    /* object-fit: cover; سيملأ الصورة العنصر بدون تشويه */
-    border-radius: 10px; /* إضافة لمسة جمالية بحواف مستديرة */
+    border-radius: 10px; 
 }
-
 
 /* Contact Section */ 
 .Contact-part {
@@ -262,7 +211,7 @@ color: rgb(212, 222, 235);
     text-align: center;
     padding: 40px 20px;
 }
-/* استحدام المكتبة للفورم */
+/* use the Bootstrap for form*/
 .form-control {
     border-radius: 10px;
     padding: 15px;
@@ -272,57 +221,7 @@ color: rgb(212, 222, 235);
     font-size: 15px;
 }
 
-/* 
-.input-group {
-    margin: 15px auto;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    max-width: 500px;
-    text-align: left;
-}
-
-.input-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.input-group input, 
-.input-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-.input-group textarea {
-    height: 100px;
-    resize: none;
-} */
-/*  Using Bootstrap*/
-/* .btn-danger {
-    background-color: #ff6f61 !important;
-}
-.btn-danger:hover {
-    background-color: #0a0908; } /* تغيير اللون عند التمرير */
-
-
-/* .btn-submit {
-    background-color: #ff6f61; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.btn-submit:hover {
-    background-color: #ff3f2f; 
-} */
+/* social icon Section */ 
 
 .social-icon {
     display: inline-block; 
@@ -337,6 +236,8 @@ color: rgb(212, 222, 235);
     background-color: #181214; 
     padding: 10px; 
     }
+
+ /* footer Section */ 
 
 footer {
     background-color: #34495e;
@@ -383,12 +284,11 @@ footer {
     .project, .certificate {
         width: 60%;
         padding: 10px;
-        max-width: 40%; /* توسيط الصورة وجعلها تملأ العنصر */
-
+        max-width: 40%; 
     }
 
     .project img, .certificate img {
-        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        max-width: 80%; 
         height: 220px;
     }
 
@@ -418,31 +318,31 @@ footer {
         margin-left: 15px;
     }
     .navbar {
-        flex-direction: row; /* إبقاء العناصر في صف واحد */
-        justify-content: space-between; /* توزيع العناصر بين اليسار واليمين */
+        flex-direction: row; 
+        justify-content: space-between; 
         padding: 10px;
     }
 
     .navbar h1 {
-        font-size: 28px; /* تقليل حجم الخط */
-        margin-left: 0; /* إلغاء المسافة الجانبية */
+        font-size: 28px; 
+        margin-left: 0; 
         margin-bottom:15px;
         text-align:center;
     }
 
     nav ul {
-        display: flex; /* إبقاء الروابط في صف واحد */
-        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        display: flex; 
+        width: auto; 
         text-align: center;
-}
+    }
 
     nav li {
-        margin: 0 2px; /* تقليل المسافة بين العناصر */
+        margin: 0 2px; 
     }
 
     nav li a {
-        font-size: 22px; /* تقليل حجم الخط */
-        padding: 10px 10px; /* تعديل الحشو حول النص */
+        font-size: 22px; 
+        padding: 10px 10px; 
     }
 
     nav li a:hover {
@@ -480,44 +380,43 @@ footer {
     }
 
     .project, .certificate {
-        max-width: 30%; /* جعل كل عنصر يشغل كامل العرض */
+        max-width: 30%; 
         width: 55%;
         padding: 15px;
     }
 
     .project img, .certificate img {
-        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        max-width: 80%; 
         height: 220px;
     }
 }
 
 @media (max-width: 768px) {
     .navbar  {
-        /* display: inline-block; */
         display: flex;
         margin-right: 5px;
     
     }
     .navbar h1 {
-        font-size: 28px; /* تقليل حجم الخط */
-        margin-left: 0; /* إلغاء المسافة الجانبية */
+        font-size: 28px; 
+        margin-left: 0; 
         margin-bottom:15px;
         text-align:center;
     }
 
     nav ul {
-        display: flex; /* إبقاء الروابط في صف واحد */
-        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        display: flex; 
+        width: auto; 
         text-align: center;
-}
+    }
 
     nav li {
-        margin: 0 2px; /* تقليل المسافة بين العناصر */
+        margin: 0 2px; 
     }
 
     nav li a {
-        font-size: 22px; /* تقليل حجم الخط */
-        padding: 10px 10px; /* تعديل الحشو حول النص */
+        font-size: 22px; 
+        padding: 10px 10px; 
     }
 
     nav li a:hover {
@@ -555,13 +454,13 @@ footer {
     }
 
     .project, .certificate {
-        max-width: 30%; /* جعل كل عنصر يشغل كامل العرض */
+        max-width: 30%; 
         width: 55%;
         padding: 15px;
     }
 
     .project img, .certificate img {
-        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        max-width: 80%; 
         height: 220px;
     }
 }
@@ -569,34 +468,34 @@ footer {
 
 @media (max-width: 576px) {
     .navbar {
-        flex-direction: row; /* إبقاء العناصر في صف واحد */
-        justify-content: space-between; /* توزيع العناصر بين اليسار واليمين */
+        flex-direction: row; 
+        justify-content: space-between; 
         padding: 10px;
     }
 
     .navbar h1 {
-        font-size: 22px; /* تقليل حجم الخط */
-        margin-left: 0; /* إلغاء المسافة الجانبية */
+        font-size: 22px; 
+        margin-left: 0; 
         margin-bottom:20px;
         text-align:center;
-        flex: 1; /* تأكد من أن العنوان يأخذ المساحة المتاحة */
-        display: flex; /* إضافة flexbox */
-        justify-content: center; /* محاذاة النص في المنتصف */
+        flex: 1; 
+        display: flex; 
+        justify-content: center; 
     }
 
     nav ul {
-        display: flex; /* إبقاء الروابط في صف واحد */
-        width: auto; /* تأكد من أن القائمة تأخذ عرضها المناسب */
+        display: flex; 
+        width: auto; 
         text-align: center;
-}
+    }
 
     nav li {
-        margin: 0 2px; /* تقليل المسافة بين العناصر */
+        margin: 0 2px; 
     }
 
     nav li a {
-        font-size: 14px; /* تقليل حجم الخط */
-        padding: 10px 15px; /* تعديل الحشو حول النص */
+        font-size: 14px; 
+        padding: 10px 15px; 
     }
 
     nav li a:hover {
@@ -622,38 +521,38 @@ footer {
     .certificate-grid, .projects-container {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column; /* جعل العناصر تتكدس عموديًا */
-        gap: 10px; /* تقليل المسافة بين العناصر */
+        flex-direction: column; 
+        gap: 10px; 
         justify-items: center;
-        align-items: center; /* توسيط العناصر */
+        align-items: center; 
     }
 
     .project, .certificate {
-        max-width: 100%; /* جعل كل عنصر يشغل كامل العرض */
+        max-width: 100%; 
         width: 80%;
         padding: 10px;
     }
 
     .project img, .certificate img {
-        max-width: 80%; /* توسيط الصورة وجعلها تملأ العنصر */
+        max-width: 80%; 
         height: 220px;
     }
 
-.social-icon {
-    display: inline-block; 
-    font-size: 19px;
-}
+    .social-icon {
+        display: inline-block; 
+        font-size: 19px;
+    }
 
 }
 
 @media (max-width: 375px) {
     .navbar {
-        flex-direction: column; /* تحويل القائمة إلى عمودية */
+        flex-direction: column; 
         align-items: center;
     }
 
     .navbar h1 {
-        font-size: 18px; /* تصغير حجم العنوان */
+        font-size: 18px; 
         text-align: center;
         margin-bottom: 10px;
     }
@@ -664,11 +563,11 @@ footer {
     }
 
     nav li {
-        margin: 5px 0; /* توزيع الروابط */
+        margin: 5px 0; 
     }
 
     nav li a {
-        font-size: 14px; /* تصغير النص */
+        font-size: 14px; 
         padding: 8px 10px;
     }
 
